@@ -15,7 +15,7 @@ namespace XO_game
 
     public partial class Form1 : KryptonForm
     {
-        int[] a = new int[3] { 0, 1, 2 };//creating arrays......
+        int[] a = new int[3] { 0, 1, 2 };//creating arrays and providing data set......
         int[] b = new int[3] { 3, 4, 5 };
         int[] c = new int[3] { 6, 7, 8 };
         int[] p = new int[3] { 0, 3, 6 };
@@ -344,6 +344,7 @@ namespace XO_game
                     if (player.Contains(now[0]) && player.Contains(now[1]) && player.Contains(now[2]))
                     {
                         showmsg("X");
+                        xwon = true;
                         break;
                     }
                 }
@@ -352,6 +353,7 @@ namespace XO_game
                     if (computer.Contains(now[0]) && computer.Contains(now[1]) && computer.Contains(now[2]))
                     {
                         showmsg("O");
+                        ywon = true;
                         break;
                     }
                 }
